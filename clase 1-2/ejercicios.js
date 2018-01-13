@@ -90,8 +90,8 @@ console.log("squareRoot: ", squareRoot(3))
 // function dogAge(humanAge) {
 //   return humanAge * 7
 // }
-const dogAge = humanAge => (typeof humanAge === "number" ? humanAge * 7 : 0)
-
+const dogAge = (humanAge = 0) => humanAge * 7
+console.log("dogAge: ", dogAge(12))
 // function isLoremIpsum(text) {
 //   return text.includes("lorem")
 // }
